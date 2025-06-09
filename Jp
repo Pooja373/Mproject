@@ -7,7 +7,7 @@ stages {
         stage('Checkout') {
             steps {
                 git branch: 'master', url:
-'https://github.com/mtechkiran/SimpleCalci.git'
+'https://github.com/Pooja373/Mproject.git'
 } }
  stage('Build') {
         steps {
@@ -20,5 +20,6 @@ stages {
 } }
  stage('Run Application') {
         steps {
+                sh 'java –jar target/Mproject-0.0.1-SNAPSHOT.jar'
 } }
 }
